@@ -1,0 +1,3 @@
+.circle-animation {
+    transform: translateY(var(--spacing-m));
+}

@@ -1,0 +1,13 @@
+.p--base {
+    max-width: 50%;
+    margin-top: var(--spacing-m);
+}
+
+.p--right {
+    padding-right: var(--spacing-m);
+    align-self: flex-end;
+}
+
+.p--left {
+    padding-left: var(--spacing-m);
+}

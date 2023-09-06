@@ -1,0 +1,13 @@
+.text--big {
+    font-family: var(--light-text);
+    font-size: 8rem;
+    font-weight: 300;
+    line-height: 1;
+    max-width: 82%;
+    margin: 0 auto;
+
+    & span:nth-child(even) {
+        text-align: right;
+        font-family: var(--italic-text);
+    }
+}

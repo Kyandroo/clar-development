@@ -1,0 +1,18 @@
+.mouse {
+    z-index: 10;
+    position: fixed;
+    transition: all .2s ease;
+
+    &.mouse--circle {
+        width: var(--spacing-s);
+        height: var(--spacing-s);
+        background-color: var(--accent);
+        mix-blend-mode: difference;
+        border-radius: var(--radius-base);
+        position: fixed;
+    }
+
+    &.mouse--img {
+        transform: scale(.5);
+    }
+}

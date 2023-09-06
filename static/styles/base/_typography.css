@@ -1,0 +1,36 @@
+h1 {
+    font-family: var(--light-text);
+    font-weight: 300;
+    font-size: 12rem;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg) translateX(var(--spacing-s));
+    align-self: flex-start;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    border-bottom: 1px solid var(--primary);
+    padding-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-s);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+span {
+    display: block;
+}
+
+.text--lowercase {
+    font-family: var(--light-text);
+    font-size: 5rem;
+    text-transform: initial;
+    margin-top: var(--spacing-xs);
+}

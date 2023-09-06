@@ -1,0 +1,17 @@
+.list {
+    --extra-spacing: .5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-s);
+
+    &.list--custom li::marker {
+        content: "\2731";
+        font-size: var(--spacing-xs);
+    }
+
+    & li {
+        transform: translateX(var(--extra-spacing));
+        padding-left: var(--spacing-xs);
+    }
+}

@@ -1,0 +1,38 @@
+:root {
+    /* all fonts */
+    --read-text: 'Subset Grotesk';
+    --light-text: 'Subset Canela Light';
+    --italic-text: 'Subset Canela Italic';
+    --bold-text: 'Subset Canela Regular';
+
+    /* normal colors */
+    --light: hsl(43, 33%, 96%);
+    --dark: hsl(0, 0%, 11%);
+    --primary: hsl(226, 90%, 32%);
+    --secondary: hsl(166, 66%, 15%);
+    --secondary-light: hsl(161, 40%, 67%);
+    --faded: hsl(14, 45%, 44%);
+    --accent: hsl(40, 89%, 60%);
+    --accent-light: hsl(23, 79%, 85%);
+    --bright: hsl(0, 0%, 100%);
+
+    /* transition colors */
+    --accent-trans-light: hsl(35, 72%, 66%);
+    --accent-trans-dark: hsl(33, 71%, 35%);
+    --secondary-trans-light: hsl(142, 19%, 50%);
+    --secondary-trans-dark: hsl(106, 12%, 28%);
+    --primary-trans-light: hsl(206, 38%, 67%);
+    --primary-trans-dark: hsl(222, 34%, 41%);
+    --dimmed-trans-light: #cf8ca0;
+    --dimmed-trans-dark: hsl(344, 36%, 28%);
+    --faded-trans-light: hsl(20, 59%, 58%);
+    --faded-trans-dark: hsl(20, 69%, 35%);
+
+    /* space */
+    --spacing-xs: 1rem;
+    --spacing-s: 2rem;
+    --spacing-m: 6rem;
+    --spacing-l: 15rem;
+
+    --radius-base: 50%;
+}

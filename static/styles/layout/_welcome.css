@@ -1,0 +1,18 @@
+.welcome-screen {
+    width: 100vw;
+    width: 100svw;
+    height: 100vh;
+    height: 100svh;
+    color: var(--bright);
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 50;
+
+    & div {
+        width: 12rem;
+        overflow: hidden;
+    }
+}

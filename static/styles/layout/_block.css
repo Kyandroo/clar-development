@@ -1,0 +1,93 @@
+.block {
+    --padding-base: 1.5rem;
+
+    padding: var(--spacing-m) var(--padding-base) var(--spacing-l) var(--padding-base);
+
+    &.block--intro {
+        width: 75%;
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+    
+        & .text--big {
+            margin-bottom: var(--spacing-l);
+        }
+    
+        & .p--base {
+            margin-bottom: var(--spacing-l);
+        }
+    }
+
+    &.block--info {
+        color: var(--bright);
+        background-color: var(--primary);
+    
+        & .text--big {
+            margin: var(--spacing-m) auto;
+        }
+
+        & .text--info {
+            justify-content: space-between;
+            /*align-items: flex-start;*/
+        }
+    
+        & .info-block--right div:not(:last-child) {
+            margin-bottom: var(--spacing-m);
+        }
+    }
+
+    &.block--team {
+        color: var(--secondary-light);
+        background-color: var(--secondary);
+    
+        & .text--big {
+            margin: var(--spacing-m) auto;
+        }
+    
+        & .title--second {
+            border-color: var(--secondary-light);
+        }
+    }
+
+    &.block--members {
+        color: var(--accent-light);
+        background-color: var(--faded);
+        padding-top: var(--spacing-m);
+    
+        & strong {
+            font-size: 1.1rem;
+            margin-bottom: var(--spacing-xs);
+            display: block;
+        }
+    
+        & .team-member {
+            padding: var(--spacing-s) 0;
+            position: relative;
+        }
+    
+        & .text--big {
+            max-width: 100%;
+        }
+    }
+
+    &.block--contact {
+        color: var(--dark);
+        background-color: var(--accent);
+        text-align: center;
+        height: 100vh;
+        height: 100svh;
+        width: 100vw;
+        width: 100svw;
+        /* position: fixed;
+        z-index: -5;
+        top: 0;*/
+    }
+}
+
+.white-back {
+    background-color: var(--bright);
+}
+
+.full-intro {
+    transition: color .3s ease, background-color .3s ease;
+}

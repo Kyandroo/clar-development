@@ -1,0 +1,24 @@
+.block-quote-cards {
+    overflow: hidden;
+
+    & .quote-cards {
+        transform: translateX(35%);
+    }
+
+    & .card {
+        flex-shrink: 0;
+        width: 17rem;
+    }
+    
+    & cite {
+        font-weight: 600;
+        font-style: normal;
+        display: block;
+        margin-top: var(--spacing-m);
+    }
+}
+
+/*section:has( + footer) {
+    margin-bottom: 100vh;
+    margin-bottom: 100svh;
+}*/

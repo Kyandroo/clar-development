@@ -1,7 +1,7 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-export default pinScroll = () => {
+const pinScroll = () => {
   const $triggerElements = document.querySelectorAll(
     "[data-animation='pin-scroll']"
   );
@@ -82,3 +82,5 @@ export default pinScroll = () => {
     });
   });
 };
+
+export default pinScroll;

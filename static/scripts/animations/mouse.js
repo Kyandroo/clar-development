@@ -5,7 +5,7 @@ const $mouseParents = document.querySelectorAll(
   "[data-animation='mouse-move']"
 );
 
-export default mouseMove = () => {
+const mouseMove = () => {
   $mouseParents.forEach(($mouseParent) => {
     const $mouseElement = $mouseParent.querySelectorAll(
       "[data-child='mouse-move']"
@@ -32,3 +32,5 @@ export default mouseMove = () => {
     window.addEventListener("mousemove", debouncedPosition);
   });
 };
+
+export default mouseMove;

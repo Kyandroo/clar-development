@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 
-export default pinElements = () => {
+const pinElements = () => {
   const $pinParents = document.querySelectorAll("[data-animation='pin-only']");
 
   const pinProperties = (
@@ -51,3 +51,5 @@ export default pinElements = () => {
     // );
   }
 };
+
+export default pinElements;

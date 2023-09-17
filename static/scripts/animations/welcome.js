@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 
-export default initializeWelcome = (callback) => {
+const initializeWelcome = (callback) => {
   const $swipeParent = document.querySelector(
     "[data-animation='swipe-through']"
   );
@@ -21,7 +21,9 @@ export default initializeWelcome = (callback) => {
     timeline
       .set($swipeElement, { y: "100%" })
       .to($swipeElement, { y: "0%" })
-      .to($swipeElement, { y: "-100%", delay: .3 })
+      .to($swipeElement, { y: "-100%", delay: 0.3 })
       .to($swipeParent, { x: "100%", duration: 1, ease: "Expo.easeIn" });
   });
 };
+
+export default initializeWelcome;

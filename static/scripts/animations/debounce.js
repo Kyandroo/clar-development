@@ -1,4 +1,4 @@
-export default debounce = (func, delay) => {
+const debounce = (func, delay) => {
   let timerId;
 
   return (...args) => {
@@ -8,3 +8,5 @@ export default debounce = (func, delay) => {
     }, delay);
   };
 };
+
+export default debounce;

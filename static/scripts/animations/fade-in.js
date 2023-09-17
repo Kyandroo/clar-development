@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 
-export default fadeInElements = () => {
+const fadeInElements = () => {
   const $fadeParents = document.querySelectorAll("[data-animation='fade-in']");
 
   $fadeParents.forEach(($fadeParent) => {
@@ -12,7 +12,7 @@ export default fadeInElements = () => {
       gsap.from($fadeChildren, {
         opacity: 0,
         y: 100,
-        delay: .4,
+        delay: 0.4,
         scrollTrigger: {
           trigger: $fadeParent,
           start: "5% 100%",
@@ -22,3 +22,5 @@ export default fadeInElements = () => {
     }
   });
 };
+
+export default fadeInElements;

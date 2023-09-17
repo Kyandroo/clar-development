@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 
-export default swipeInElements = () => {
+const swipeInElements = () => {
   const $staggerParents = document.querySelectorAll(
     "[data-animation='stagger-in']"
   );
@@ -9,7 +9,7 @@ export default swipeInElements = () => {
     gsap.from(array, {
       ...animations,
       ease: "Power4.out",
-      delay: .3,
+      delay: 0.3,
       scrollTrigger: {
         trigger: trigger,
         start: "5% 100%",
@@ -34,14 +34,14 @@ export default swipeInElements = () => {
       staggerProperties($staggerChildren, $staggerParent, {
         opacity: 0,
         y: 100,
-        stagger: .5,
+        stagger: 0.5,
       });
 
       staggerProperties($sizeChildren, $staggerParent, {
-        scale: .1,
+        scale: 0.1,
         transformOrigin: "bottom",
         stagger: {
-          amount: -.5,
+          amount: -0.5,
         },
       });
 
@@ -50,9 +50,11 @@ export default swipeInElements = () => {
         y: -50,
         x: -100,
         stagger: {
-          amount: .2,
+          amount: 0.2,
         },
       });
     }
   });
 };
+
+export default swipeInElements;
